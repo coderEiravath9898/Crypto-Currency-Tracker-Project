@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 3rem;
-    background-color: var(--pitch-black);
+    background-color: var(--black);
     position: sticky;
     top: 0;
     left: 0;
@@ -35,4 +35,45 @@
     color: var(--grey);
     font-weight: 600;
     font-size: 1rem;
+}
+
+.mobile-drawer {
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .navbar {
+
+        padding: 1.5rem;
+    }
+
+    .logo {
+
+        font-size: 1rem;
+    }
+
+    .link {
+
+        font-size: 0.8rem;
+    }
+
+    .links {
+
+        display: none;
+    }
+
+    .mobile-drawer {
+        display: block;
+    }
+
+    .drawer-div {
+
+        width: 40vw;
+        height: 100vh;
+        background-color: var(--black);
+        padding: 1.5rem;
+    }
 }
